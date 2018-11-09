@@ -31,8 +31,8 @@
     </bean>
 
     <!-- TODO: default = AcceptHeaderLocaleResolver (Accept-Language header) -->
-    <!--<bean id="localeResolver" class="org.springframework.web.servlet.i18n.FixedLocaleResolver">-->
-        <!--<property name="defaultLocale" value="ko" />-->
-    <!--</bean>-->
+<!--     <bean id="localeResolver" class="org.springframework.web.servlet.i18n.FixedLocaleResolver"> -->
+<!--         <property name="defaultLocale" value="en" /> -->
+<!--     </bean> -->
 
 </beans>
