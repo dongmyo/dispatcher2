@@ -13,14 +13,14 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class LoginServlet extends HttpServlet {
-    /* 로그인 폼 */
+    /* Login form */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher rd = req.getRequestDispatcher("/login.jsp");
         rd.forward(req, resp);
     }
 
-    /* 로그인 처리 */
+    /* Processing login */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String id = req.getParameter("id");

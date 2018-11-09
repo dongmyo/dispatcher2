@@ -1,59 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://java.sun.com/xml/ns/javaee"
-        version="2.5"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-    <display-name>servlet</display-name>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name>servlet</display-name>
 
-    <!-- listener -->
-    <listener>
-        <listener-class>com.nhnent.edu.dispatcher.listener.ContextLoaderListener</listener-class>
-    </listener>
+	<!-- listener -->
+	<listener>
+		<listener-class>com.nhnent.edu.dispatcher.listener.ContextLoaderListener</listener-class>
+	</listener>
 
-    <!-- filter -->
-    <filter>
-        <filter-name>encodingFilter</filter-name>
-        <filter-class>com.nhnent.edu.dispatcher.filter.CharacterEncodingFilter</filter-class>
-        <init-param>
-            <param-name>encoding</param-name>
-            <param-value>UTF-8</param-value>
-        </init-param>
-    </filter>
+	<!-- filter -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>com.nhnent.edu.dispatcher.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
 
-    <filter-mapping>
-        <filter-name>encodingFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 
-    <!-- serlvet -->
-    <!--    login -->
-    <servlet>
-        <servlet-name>loginServlet</servlet-name>
-        <servlet-class>com.nhnent.edu.dispatcher.servlet.LoginServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>loginServlet</servlet-name>
-        <url-pattern>/login</url-pattern>
-    </servlet-mapping>
+	<!-- serlvet -->
+	<!-- login -->
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.nhnent.edu.dispatcher.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
 
-    <!--    logout -->
-    <servlet>
-        <servlet-name>logoutServlet</servlet-name>
-        <servlet-class>com.nhnent.edu.dispatcher.servlet.LogoutServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>logoutServlet</servlet-name>
-        <url-pattern>/logout</url-pattern>
-    </servlet-mapping>
+	<!-- logout -->
+	<servlet>
+		<servlet-name>logoutServlet</servlet-name>
+		<servlet-class>com.nhnent.edu.dispatcher.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
 
-    <!--    member list -->
-    <servlet>
-        <servlet-name>memberListServlet</servlet-name>
-        <servlet-class>com.nhnent.edu.dispatcher.servlet.MemberListServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>memberListServlet</servlet-name>
-        <url-pattern>/member/list</url-pattern>
-    </servlet-mapping>
+	<!-- member list -->
+	<servlet>
+		<servlet-name>memberListServlet</servlet-name>
+		<servlet-class>com.nhnent.edu.dispatcher.servlet.MemberListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>memberListServlet</servlet-name>
+		<url-pattern>/member/list</url-pattern>
+	</servlet-mapping>
 
 </web-app>
