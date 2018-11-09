@@ -7,19 +7,19 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>회원 목록</title>
+    <title>Member List</title>
 </head>
 <body>
     <div style="background-color:#00008b;color:#ffffff;height:20px;padding: 5px;">
         <% if (member != null) { %>
         <span style="float:right;">
             <%= member.getId() %>
-            <a style="color:white;" href="/logout">로그아웃</a>
+            <a style="color:white;" href="/logout">Logout</a>
         </span>
         <% } %>
     </div>
 
-    <h1>회원 목록</h1>
+    <h1>Member List</h1>
 
     <c:forEach var="member" items="${members}">
         ${member.id},

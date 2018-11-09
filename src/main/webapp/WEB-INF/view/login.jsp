@@ -10,10 +10,10 @@
     <title><fmt:message key="login" /></title>
 </head>
 <body>
-    <%-- TODO: #1. 언어 선택 using 'lang' request parameter --%>
+    <%-- TODO: #1. Set language using 'lang' request parameter --%>
     <div style="background-color:#00008b;color:#ffffff;height:20px;padding: 5px;">
         <span style="float:right;">
-            <a style="color:white;" href="?lang=ko">한글</a> | <a style="color:white;" href="?lang=en">English</a>
+            <a style="color:white;" href="?lang=ja">日本</a> | <a style="color:white;" href="?lang=ko">한글</a> | <a style="color:white;" href="?lang=en">English</a>
         </span>
     </div>
 
