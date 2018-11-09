@@ -14,6 +14,7 @@
     <mvc:annotation-driven />
 
     <!-- TODO: modify controllers as BeanNameUrlHandlerMapping -->
+    <!-- FIXME: Remove -->
     <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <value>
@@ -22,7 +23,8 @@
             </value>
         </property>
     </bean>
-
+    
+    <!-- HINT <bean name="/member/list" class="com.nhnent.edu.dispatcher.controller.MemberListController" />  -->
     <bean id="memberListController" class="com.nhnent.edu.dispatcher.controller.MemberListController" />
 
     <bean id="logoutController" class="com.nhnent.edu.dispatcher.controller.LogoutController">
