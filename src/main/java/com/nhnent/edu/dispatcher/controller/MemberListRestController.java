@@ -26,7 +26,8 @@ public class MemberListRestController {
         return memberRepository.list();
     }
 
-    // TODO: 5. type별 멤버 목록 가져오는 controller 메쏘드 작성
+    // TODO: 5. type별 멤버 목록 가져오는 controller 메서드 작성
+    // TODO: 5. type別のメンバーのリストを取得controllerメソッドの作成
     @RequestMapping(
             value = "/member/list", method = RequestMethod.GET,
             produces = "application/json; charset=UTF-8",

@@ -10,7 +10,8 @@ public interface MemberRepository {
 
     List<Member> list();
 
-    // TODO: 3. MemberType에 맞는 멤버 목록 가져오는 메쏘드 추가
+    // TODO: 3. MemberType이 일치하는 멤버 목록을 가져오는 메서드 추가
+    // TODO: 3. MemberTypeが一致するメンバーのリストを取得するメソッドを追加
     List<Member> list(MemberType memberType);
 
 }

@@ -5,6 +5,7 @@ import org.springframework.core.convert.converter.ConverterFactory;
 import org.springframework.util.StringUtils;
 
 // TODO: 7. enum converter 작성
+// TODO: 7. enum converter作成
 public class LowerCaseStringToEnumConverterFactory implements ConverterFactory<String, Enum> {
     @Override
     public <T extends Enum> Converter<String, T> getConverter(Class<T> targetType) {
