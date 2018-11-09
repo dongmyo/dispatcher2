@@ -13,9 +13,10 @@
     <!-- @EnableWebMvc -->
     <mvc:annotation-driven />
 
-    <!-- TODO: make LogoutController using SimpleUrlHandlerMapping -->
+    <!-- TODO 1: try to map "/logout" to LogoutController Using SimpleUrlHandlerMapping  -->
     <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
+            <!-- HINT: PATH=HANDLER_BEAN_NAME -->
             <value>
                 /member/list=memberListController
             </value>
