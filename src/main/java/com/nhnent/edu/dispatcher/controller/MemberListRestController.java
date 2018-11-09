@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-// TODO: 1. /member/list.json RestController 만들어서 실행
+// TODO: 1. "/member/list.json" RestController 만들어서 실행
+// TODO: 1. "/member/list.json" RestController作っ実行
 // @RestController = @Controller + @ResponseBody
 @RestController
 public class MemberListRestController {

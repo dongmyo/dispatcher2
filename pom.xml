@@ -117,7 +117,8 @@
             <version>${spring-framework.version}</version>
         </dependency>
 
-        <!-- TODO: 2. jackson2 의존성 라이브러리 추가 후 실행 -->
+        <!-- TODO: 2. jackson2 라이브러리 의존성 추가 후 실행 -->
+        <!-- TODO: 2. jackson2ライブラリの依存関係を追加して実行 -->
         <!-- jackson2 -->
         <!--<dependency>-->
             <!--<groupId>com.fasterxml.jackson.core</groupId>-->
