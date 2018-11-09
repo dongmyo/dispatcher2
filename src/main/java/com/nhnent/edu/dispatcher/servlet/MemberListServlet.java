@@ -20,7 +20,8 @@ public class MemberListServlet extends HttpServlet {
         List<Member> members = memberRepository.list();
         req.setAttribute("members", members);
 
-        // TODO: Front Controller에서 공통 처리하므로 제거하고 viewUrl 설정
+        // TODO 5: Front Controller 도입에 따라 공통 부분 제거하고 viewUrl 전달하도록 수정
+        // TODO 5: Front Controller導入により、共通部分を削除してviewUrl伝達するように修正
         req.setAttribute("viewUrl", "/memberList.jsp");
 //        resp.setContentType("text/html; charset=UTF-8");
 //

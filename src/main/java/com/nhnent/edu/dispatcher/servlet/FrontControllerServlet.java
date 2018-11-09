@@ -7,7 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-// TODO: Front Controller 도입
+// TODO 2: FrontController 코드 확인
+// TODO 2: FrontControllerコード確認
 public class FrontControllerServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -16,26 +17,28 @@ public class FrontControllerServlet extends HttpServlet {
 
         String servletPath = req.getServletPath();
 
-        /* 분기 처리 */
         String pageControllerPath = null;
-        // 로그인
+        // Login. ログイン
         if ("/login.do".equals(servletPath)) {
             pageControllerPath = "/login";
         }
-        // 로그아웃
+        // Logout. ログアウト
         else if ("/logout.do".equals(servletPath)) {
             pageControllerPath = "/logout";
         }
-        // 회원 목록
-        if ("/member/list.do".equals(servletPath)) {
+        // Member list. 会員リスト
+        else if ("/member/list.do".equals(servletPath)) {
             pageControllerPath = "/member/list";
         }
+        else {
+        	throw new IllegalArgumentException("servletPath is invalid : " + servletPath);
+        }
 
-        /* 페이지 컨트롤러로 위임 */
+        /* Delegate to PageController. PageControllerに委任 */
         RequestDispatcher rd = req.getRequestDispatcher(pageControllerPath);
         rd.include(req, resp);
 
-        /* 뷰 페이지로 위임 */
+        /* Delegate to ViewPage. ViewPageに委任 */
         String viewUrl = (String) req.getAttribute("viewUrl");
         if (viewUrl.startsWith("redirect:")) {
             resp.sendRedirect(viewUrl.substring(9));
