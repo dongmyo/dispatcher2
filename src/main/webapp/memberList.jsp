@@ -7,20 +7,21 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>회원 목록</title>
+    <title>Member List</title>
 </head>
 <body>
     <div style="background-color:#00008b;color:#ffffff;height:20px;padding: 5px;">
         <% if (member != null) { %>
         <span style="float:right;">
             <%= member.getId() %>
-            <!-- TODO: Front Controller가 받을 수 있도록 .do로 url 변경 -->
-            <a style="color:white;" href="/logout.do">로그아웃</a>
+            <!-- TODO 8: FrontController가 받을 수 있도록 .do로 url 변경 -->
+            <!-- TODO 8: FrontControllerが受けられるように.doにurl変更 -->
+            <a style="color:white;" href="/logout">Logout</a>
         </span>
         <% } %>
     </div>
 
-    <h1>회원 목록</h1>
+    <h1>Member List</h1>
 
     <c:forEach var="member" items="${members}">
         ${member.id},

@@ -3,17 +3,18 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>로그인</title>
+    <title>Login</title>
 </head>
 <body>
-    <h2>사용자 로그인</h2>
+    <h2>Member Login</h2>
 
-    <!-- TODO: Front Controller가 받을 수 있도록 .do로 url 변경 -->
-    <form action="login.do" method="post">
-        아이디  : <input type="text" name="id" /><br />
-        비밀번호 : <input type="password" name="password" /><br />
+    <!-- TODO 6: FrontController가 받을 수 있도록 .do로 url 변경 -->
+    <!-- TODO 6: FrontControllerが受けられるように.doにurl変更 -->
+    <form action="login" method="post">
+        ID : <input type="text" name="id" /><br />
+        PW : <input type="password" name="password" /><br />
 
-        <input type="submit" value="로그인" />
+        <input type="submit" value="Login" />
     </form>
 </body>
 </html>

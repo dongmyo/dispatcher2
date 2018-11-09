@@ -3,14 +3,14 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <!-- TODO: Front Controller가 받을 수 있도록 .do로 url 변경 -->
-    <meta http-equiv="Refresh" content="1;url=/login.do" />
-    <title>로그인 실패</title>
+    <!-- TODO 7: FrontController가 받을 수 있도록 .do로 url 변경 -->
+    <!-- TODO 7: FrontControllerが受けられるように.doにurl変更 -->
+    <meta http-equiv="Refresh" content="1;url=/login" />
+    <title>Login Failed</title>
 </head>
 <body>
     <p>
-        로그인 실패입니다. 이메일 또는 암호가 맞지 않습니다.!<br />
-        잠시 후에 다시 로그인 화면으로 갑니다.
+        Login failed!. ID or Password invalid<br />
     </p>
 </body>
 </html>

@@ -56,15 +56,16 @@
         <url-pattern>/member/list</url-pattern>
     </servlet-mapping>
 
-    <!-- TODO: Front Controller 적용 -->
+    <!-- TODO 1: FrontController 적용 -->
+    <!-- TODO 1: FrontController 適用 -->
     <!--    front controller -->
-    <servlet>
-        <servlet-name>frontControllerServlet</servlet-name>
-        <servlet-class>com.nhnent.edu.dispatcher.servlet.FrontControllerServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>frontControllerServlet</servlet-name>
-        <url-pattern>*.do</url-pattern>
-    </servlet-mapping>
+<!--     <servlet> -->
+<!--         <servlet-name>frontControllerServlet</servlet-name> -->
+<!--         <servlet-class>com.nhnent.edu.dispatcher.servlet.FrontControllerServlet</servlet-class> -->
+<!--     </servlet> -->
+<!--     <servlet-mapping> -->
+<!--         <servlet-name>frontControllerServlet</servlet-name> -->
+<!--         <url-pattern>*.do</url-pattern> -->
+<!--     </servlet-mapping> -->
 
 </web-app>
