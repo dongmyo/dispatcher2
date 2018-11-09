@@ -14,6 +14,7 @@
     <!-- AnnotationDrivenBeanDefinitionParser -> MvcNamespaceUtils.registerDefaultComponents() -->
     <!--  : register BeanNameUrlHandlerMapping, HttpRequestHandlerAdapter, SimpleControllerHandlerAdapter -->
     <!-- TODO: 3. content negotiation manager 지정 -->
+    <!-- TODO: 3. content negotiation manager指定 -->
     <mvc:annotation-driven content-negotiation-manager="contentNegotiationManager" />
 
     <bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
