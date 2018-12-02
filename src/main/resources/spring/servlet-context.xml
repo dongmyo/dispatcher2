@@ -13,9 +13,7 @@
     <!-- @EnableWebMvc -->
     <mvc:annotation-driven />
 
-    <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
-    <!-- cf.) org.springframework.web.servlet.resource.ResourceHttpRequestHandler -->
-    <mvc:resources mapping="/resources/**" location="/resources/" />
+    <!--TODO : Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 
     <bean id="jspViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
