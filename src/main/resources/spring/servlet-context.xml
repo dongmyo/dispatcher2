@@ -43,10 +43,9 @@
         </mvc:interceptor>
     </mvc:interceptors>
 
-    <!-- TODO: #4 modify session locale resolver to SessionLocaleResolver  -->
-    <!--<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver"/>-->
+    <!-- TODO: #4 Modify Locale to be editable  -->
     <bean id="localeResolver" class="org.springframework.web.servlet.i18n.FixedLocaleResolver">
-        <property name="defaultLocale" value="en" />
+        <property name="defaultLocale" value="jp" />
     </bean>
 
 </beans>
