@@ -24,9 +24,10 @@
         </property>
     </bean>
     
-    <!-- HINT <bean name="/member/list" class="com.nhnent.edu.dispatcher.controller.MemberListController" />  -->
+    <!-- FIXME -->
     <bean id="memberListController" class="com.nhnent.edu.dispatcher.controller.MemberListController" />
 
+	<!-- FIXME -->
     <bean id="logoutController" class="com.nhnent.edu.dispatcher.controller.LogoutController">
         <property name="requireSession" value="true" />
     </bean>
