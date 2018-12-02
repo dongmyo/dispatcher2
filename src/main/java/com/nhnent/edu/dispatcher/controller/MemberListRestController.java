@@ -19,7 +19,8 @@ public class MemberListRestController {
 
     // TODO: 2. produces로 json 응답 지정
     // TODO: 2. producesでjson応答指定
-    @RequestMapping(value = "/member/list", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")
+    @RequestMapping(value = "/member/list", method = RequestMethod.GET, 
+            produces = {"application/json; charset=UTF-8"})
     public List<Member> getMemberList() {
         return memberRepository.list();
     }

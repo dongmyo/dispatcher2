@@ -22,12 +22,7 @@
         <property name="useJaf" value="false"/>
         <property name="defaultContentType" value="text/html" />
         <property name="favorParameter" value="false" />
-
-        <property name="mediaTypes">
-            <map>
-                <entry key="json" value="application/json" />
-            </map>
-        </property>
+        <!-- TODO: 4. Set more for /member/list.json -->
     </bean>
 
     <bean name="/logout" class="com.nhnent.edu.dispatcher.controller.LogoutController">
