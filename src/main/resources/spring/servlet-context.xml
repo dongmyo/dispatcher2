@@ -17,7 +17,6 @@
 
     <!-- TODO: SimpleServletHandlerAdapter -->
     <bean name="/logout" class="com.nhnent.edu.dispatcher.servlet.LogoutServlet" />
-    <!--<bean class="org.springframework.web.servlet.handler.SimpleServletHandlerAdapter" />-->
 
     <bean id="jspViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
